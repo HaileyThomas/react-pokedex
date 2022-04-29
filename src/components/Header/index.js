@@ -1,14 +1,16 @@
 import React from "react";
-import About from "../About";
+
+import { Icon } from "@iconify/react";
 
 function Header() {
   return (
     <section className="header-container">
       <div className="title-container">
-        <h1>Pokedex</h1>
+        <h1 className="main-header">Pokedex</h1>
+        <Icon icon="mdi:pokeball" className="header-pokeball" />
       </div>
       <div className="nav-container">
-        <About />
+        <button className="nav-btn">About</button>
       </div>
     </section>
   );

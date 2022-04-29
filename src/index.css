@@ -1,6 +1,10 @@
 @import url("http://fonts.cdnfonts.com/css/pokemon-solid");
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap');
 
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: "Pokemon Solid", "Bangers", "Press Start 2P", 'Roboto', sans-serif;
@@ -13,6 +17,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
 
 /* APP FONT STYLES */
@@ -29,4 +34,76 @@ h2 {
 p {
   font-family: "Press Start 2P";
   font-size: 15px;
+}
+
+
+/* ICON STYLES */
+
+svg {
+  font-size: 35px;
+}
+
+svg.header-pokeball {
+  font-size: 40px;
+}
+
+svg.header-pokeball:hover {
+  color: white;
+}
+
+/* HEADER STYLES */
+.header-container {
+  position: sticky;
+  top: 0;
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+.title-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.main-header {
+  padding: 10px;
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+.nav-btn {
+  margin: 10px;
+  background-color: white;
+  padding: 10px;
+  font-family: "Press Start 2P";
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px darkred;
+}
+
+.nav-btn:hover {
+  background-color: yellow;
+}
+
+
+/* FOOTER STYLES */
+.footer-container {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-link {
+  color: red;
+}
+
+.footer-link:hover {
+  color: yellow;
 }
