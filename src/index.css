@@ -1,13 +1,32 @@
+@import url("http://fonts.cdnfonts.com/css/pokemon-solid");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Pokemon Solid", "Bangers", "Press Start 2P", 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./assets/images/bg2.jpg);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* APP FONT STYLES */
+h1 {
+  font-family: "Pokemon Solid";
+  font-size: 35px;
+}
+
+h2 {
+  font-family: "Bangers";
+  font-size: 25px;
+}
+
+p {
+  font-family: "Press Start 2P";
+  font-size: 15px;
 }
