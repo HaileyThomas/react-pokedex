@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: "Pokemon Solid", "Bangers", "Press Start 2P", 'Roboto', sans-serif;
+  font-family: "Press Start 2P", "Pokemon Solid", "Bangers", 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./assets/images/bg2.jpg);
@@ -89,12 +89,39 @@ svg.header-pokeball:hover {
 }
 
 
+/* POKELIST STYLES */
+.pokelist-container {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.results-container {
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+
 /* FOOTER STYLES */
 .footer-container {
   background-color: white;
   border: 2px solid black;
   border-radius: 10px;
-  width: 70%;
+  width: 60%;
   margin: auto;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
