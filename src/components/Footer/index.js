@@ -1,7 +1,7 @@
 import React from "react";
 
 function Footer() {
-    let currentYear = new Date().getFullYear();
+  let currentYear = new Date().getFullYear();
 
   return (
     <section className="footer-container">
