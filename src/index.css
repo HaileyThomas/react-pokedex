@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-family: "Bangers";
-  font-size: 25px;
+  font-size: 35px;
 }
 
 p {
@@ -49,6 +49,15 @@ svg.header-pokeball {
 
 svg.header-pokeball:hover {
   color: white;
+}
+
+svg.card-expand-icon {
+  font-size: 25px;
+}
+
+svg.card-expand-icon:hover {
+  color: red;
+  cursor: cell;
 }
 
 /* HEADER STYLES */
@@ -91,7 +100,7 @@ svg.header-pokeball:hover {
 
 /* POKELIST STYLES */
 .pokelist-container {
-  width: 70%;
+  width: 65%;
   margin: auto;
   padding: 10px;
 }
@@ -113,6 +122,61 @@ svg.header-pokeball:hover {
   margin-top: 10px;
   border: 2px solid black;
   border-radius: 10px;
+}
+
+
+/* POKEMON CARD STYLES */
+.pokemon-card-container {
+  display: inline-flex;
+}
+.pokemon-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin: 5px;
+}
+
+.pokemon-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poke-ball-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  padding: 10px;
+}
+
+.poke-ball {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(
+    to bottom,
+    red,
+    red 48%,
+    black 48%,
+    black 55%,
+    white 55%
+  );
+  border-radius: 50%;
+  border: 7px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 8px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.poke-ball-image {
+  margin-top: 5px;
+}
+
+.card-img {
+  width: 130px;
+}
+
+.card-name:hover {
+  color: red;
+  cursor: cell;
 }
 
 
