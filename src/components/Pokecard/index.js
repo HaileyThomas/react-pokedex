@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
+import Modal from "../Modal";
 
 function Pokecard(pokemonData) {
   const [pokemon, setPokemon] = useState([]);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     getPokemonData().then((data) => {
@@ -21,7 +23,11 @@ function Pokecard(pokemonData) {
       <div className="pokemon-card">
         <div className="pokemon-card-header">
           <p className="card-header">ID: {pokemon.id}</p>
-          <Icon icon="bx:expand-alt" className="card-expand-icon" />
+          <Icon
+            icon="bx:expand-alt"
+            className="card-expand-icon"
+            onClick={() => setShow(true)}
+          />
         </div>
         <div className="poke-ball-container">
           <div className="poke-ball">
@@ -35,9 +41,12 @@ function Pokecard(pokemonData) {
           </div>
         </div>
         <div className="poke-card-name">
-          <h2 className="card-name">{pokemon.name}</h2>
+          <h2 className="card-name" onClick={() => setShow(true)}>
+            {pokemon.name}
+          </h2>
         </div>
       </div>
+      <Modal onCliose={() => setShow(false)} show={show} pokemon={pokemon} />
     </section>
   );
 }
