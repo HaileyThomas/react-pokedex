@@ -41,6 +41,7 @@ p {
 
 svg {
   font-size: 35px;
+  color: black;
 }
 
 svg.header-pokeball {
@@ -58,6 +59,19 @@ svg.card-expand-icon {
 svg.card-expand-icon:hover {
   color: red;
   cursor: cell;
+}
+
+svg.modal-close:hover {
+  color: white;
+}
+
+svg.modal-lines {
+  font-size: 25px;
+  color: darkslategray;
+}
+
+svg.buttons-icon {
+  font-size: 60px;
 }
 
 /* HEADER STYLES */
@@ -177,6 +191,170 @@ svg.card-expand-icon:hover {
 .card-name:hover {
   color: red;
   cursor: cell;
+}
+
+
+/* MODAL STYLES */
+.modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: (0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 500px;
+  background-color: red;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.pokedex-top {
+  display: flex;
+}
+
+.big-circle-container {
+  padding: 10px;
+}
+
+.big-circle {
+  width: 60px;
+  height: 60px;
+  background-color: dodgerblue;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.three-circle-close-container {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.three-circle-container {
+  display: flex;
+}
+
+.dark-red-circle {
+  width: 20px;
+  height: 20px;
+  background-color: darkred;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.yellow-circle {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.green-circle {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.pokedex-screen {
+  width: 85%;
+  height: auto;
+  background: silver;
+  margin: auto;
+  border: 2px solid darkslategrey;
+  border-radius: 10px;
+  box-shadow: 8px 8px darkslategray;
+  margin-bottom: 20px;
+}
+
+.screen-top {
+  display: flex;
+  justify-content: center;
+}
+
+.small-red-circle {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.screen-main {
+  width: 85%;
+  height: auto;
+  background-color: black;
+  margin: auto;
+  border: 2px solid grey;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+.id-text {
+  color: white;
+  text-align: left;
+  padding: 5px;
+}
+
+.screen-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.big-red-circle {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.pokedex-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.name-container {
+  background-color: Chartreuse;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.button-dark-red {
+  width: 50px;
+  height: 10px;
+  background-color: darkred;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.button-blue {
+  width: 50px;
+  height: 10px;
+  background-color: blue;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
 }
 
 

@@ -16,8 +16,6 @@ function Pokecard(pokemonData) {
     return fetch(pokemonData.url).then((response) => response.json());
   };
 
-  console.log(pokemon);
-
   return (
     <section className="pokemon-card-container">
       <div className="pokemon-card">
@@ -31,13 +29,7 @@ function Pokecard(pokemonData) {
         </div>
         <div className="poke-ball-container">
           <div className="poke-ball">
-            <div className="poke-ball-image">
-              <img
-                src={pokemon.sprites.front_default}
-                alt={pokemon.name}
-                className="card-img"
-              />
-            </div>
+            <div className="poke-ball-image"></div>
           </div>
         </div>
         <div className="poke-card-name">
@@ -46,7 +38,7 @@ function Pokecard(pokemonData) {
           </h2>
         </div>
       </div>
-      <Modal onCliose={() => setShow(false)} show={show} pokemon={pokemon} />
+      <Modal onClose={() => setShow(false)} show={show} pokemon={pokemon} />
     </section>
   );
 }
