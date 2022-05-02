@@ -1,42 +1,20 @@
 import React, { useState, useEffect } from "react";
+import Pokecard from "../Pokecard";
 
 function Pokelist() {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const URL = "https://pokeapi.co/api/v2/pokemon?limit=151";
+
+  const getAllPokemon = () => {
+    return fetch(URL).then((response) => response.json());
+  };
+
+  const [allPokemon, setAllPokemon] = useState([]);
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw response;
-      })
-      .then((data) => {
-        data.results.forEach(function (pokemon) {
-          let url = pokemon.url;
-          fetch(url)
-            .then((response) => response.json())
-            .then(function (pokeData) {
-              console.log(pokeData);
-              setData(pokeData);
-            });
-        });
-      })
-      .catch((error) => {
-        console.log(error);
-        setError(error);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    getAllPokemon().then((data) => {
+      setAllPokemon(data);
+    });
   }, []);
-
-  if (loading) return "Loading...";
-  if (error) return "Error!";
-
-  const pokemon = data;
 
   return (
     <section className="pokelist-container">
@@ -51,7 +29,12 @@ function Pokelist() {
           />
         </label>
       </div>
-      <div className="results-container">results will go here</div>
+      <div className="results-container">
+        {Object.entries(allPokemon)[3] &&
+          Object.entries(allPokemon)[3][1].map((pokemonData, index) => {
+            return <Pokecard key={index} {...pokemonData} />;
+          })}
+      </div>
     </section>
   );
 }
