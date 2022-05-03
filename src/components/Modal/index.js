@@ -6,6 +6,49 @@ const Modal = (props) => {
     return null;
   }
 
+  const determineColor = (type) => {
+    let colorResult;
+    if (type === "normal") {
+      colorResult = "BurlyWood";
+    } else if (type === "grass") {
+      colorResult = "green";
+    } else if (type === "fire") {
+      colorResult = "orange";
+    } else if (type === "fighting") {
+      colorResult = "red";
+    } else if (type === "water") {
+      colorResult = "dodgerblue";
+    } else if (type === "flying") {
+      colorResult = "darkorchid";
+    } else if (type === "poison") {
+      colorResult = "purple";
+    } else if (type === "electric") {
+      colorResult = "gold";
+    } else if (type === "ground") {
+      colorResult = "chocolate";
+    } else if (type === "psychic") {
+      colorResult = "deeppink";
+    } else if (type === "rock") {
+      colorResult = "saddlebrown";
+    } else if (type === "ice") {
+      colorResult = "turquoise";
+    } else if (type === "bug") {
+      colorResult = "olive";
+    } else if (type === "dragon") {
+      colorResult = "midnightblue";
+    } else if (type === "ghost") {
+      colorResult = "rebeccapurple";
+    } else if (type === "dark") {
+      colorResult = "purple";
+    } else if (type === "steel") {
+      colorResult = "darkslategrey";
+    } else if (type === "fairy") {
+      colorResult = "lightpink";
+    }
+
+    return colorResult;
+  };
+
   return (
     <section className="modal-container" onClick={props.onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -72,7 +115,11 @@ const Modal = (props) => {
             <div className="types-box">
               <ul>
                 {props.pokemon.types.map((type) => (
-                  <li key={type.slot} className="type-button">
+                  <li
+                    key={type.slot}
+                    className="type-button"
+                    style={{ color: determineColor(type.type.name) }}
+                  >
                     {type.type.name}
                   </li>
                 ))}

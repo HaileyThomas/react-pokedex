@@ -415,7 +415,7 @@ ul {
  }
 
 .type-button {
-  background-color: blue;
+  background-color: white;
   padding: 5px;
   border-radius: 10px;
   margin: 5px;
@@ -436,6 +436,11 @@ ul {
   text-transform: capitalize;
 }
 
+.modal-footer {
+  padding: 10px;
+}
+
+
 /* FOOTER STYLES */
 .footer-container {
   background-color: white;
@@ -453,4 +458,21 @@ ul {
 
 .footer-link:hover {
   color: yellow;
+}
+
+/* SCROLLBAR STYLES */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: red;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
 }
