@@ -58,9 +58,47 @@ const Modal = (props) => {
             <Icon icon="icon-park-outline:game-two" className="buttons-icon" />
           </div>
         </div>
+        <div className="pokedex-height-weight-container">
+          <p className="height-weight-text">Height: {props.pokemon.height} m</p>
+          <p className="height-weight-text">
+            Weight: {props.pokemon.weight} kg
+          </p>
+        </div>
+        <div className="pokedex-info-container">
+          <div className="types-container">
+            <div className="types-header">
+              <p className="types-title">TYPES</p>
+            </div>
+            <div className="types-box">
+              <ul>
+                {props.pokemon.types.map((type) => (
+                  <li key={type.slot} className="type-button">
+                    {type.type.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="stats-container">
+            <ul>
+              <li>
+                <p className="stats-text">
+                  Base Exp- {props.pokemon.base_experience}
+                </p>
+              </li>
+              {props.pokemon.stats.map((stat) => (
+                <li key={stat.stat.name} className="stat-list">
+                  <p className="stats-text">
+                    {stat.stat.name}- {stat.base_stat}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         <div className="modal-footer-container">
           <p className="modal-footer" onClick={props.onClose}>
-            close pokedex
+            (close pokedex)
           </p>
         </div>
       </div>

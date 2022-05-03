@@ -209,9 +209,11 @@ svg.buttons-icon {
 
 .modal-content {
   width: 500px;
+  height: 600px;
   background-color: red;
   border: 5px solid black;
   border-radius: 10px;
+  overflow-y: auto;
 }
 
 .pokedex-top {
@@ -302,8 +304,13 @@ svg.buttons-icon {
 }
 
 .image-container {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   height: auto;
+}
+
+.modal-image {
+  width: 100%;
 }
 
 .id-text {
@@ -347,7 +354,6 @@ svg.buttons-icon {
   border-radius: 10px;
   margin: 5px;
 }
-
 .button-blue {
   width: 50px;
   height: 10px;
@@ -357,6 +363,78 @@ svg.buttons-icon {
   margin: 5px;
 }
 
+.pokedex-height-weight-container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.height-weight-text {
+  color: white;
+  font-size: 12px;
+  background-color: black;
+  padding: 12px;
+  border: 2px solid darkred;
+  margin: 10px;
+}
+
+.pokedex-info-container {
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  margin: auto;
+}
+
+.types-container {
+  border: 3px solid darkred;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: black;
+}
+
+.types-header {
+  background-image: linear-gradient(darkred, red, darkred);
+  padding: 10px;
+}
+
+.types-box {
+  background-color: black;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+.type-button {
+  background-color: blue;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.stats-container {
+  margin: 5px auto;
+  background-color: chartreuse;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+.stats-text {
+  font-size: 10px;
+  margin: 5px;
+  text-transform: capitalize;
+}
 
 /* FOOTER STYLES */
 .footer-container {
