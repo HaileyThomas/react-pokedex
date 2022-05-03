@@ -441,6 +441,65 @@ ul {
 }
 
 
+/* ABOUT STYLES */
+.about-modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: (0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-modal-content {
+  width: 500px;
+  background-color: red;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.about-modal-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 3px solid black;
+  padding: 10px;
+}
+
+.about-header {
+  font-size: 40px;
+}
+
+.about-modal-body {
+  width: 90%;
+  margin: 15px auto;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.about-modal-titles {
+  text-align: left;
+  padding: 10px;
+}
+
+.about-modal-text {
+  padding: 10px;
+}
+
+.about-link {
+  padding: 5px;
+  color: red;
+}
+
+.about-link:hover {
+  color: blue;
+}
+
+
 /* FOOTER STYLES */
 .footer-container {
   background-color: white;
