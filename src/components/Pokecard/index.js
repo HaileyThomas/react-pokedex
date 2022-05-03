@@ -30,14 +30,13 @@ function Pokecard(pokemonData) {
         <div className="poke-ball-container">
           <div className="poke-ball">
             <div className="poke-ball-image">
-              <img src={pokemon.sprites.front_default} alt="" className="modal-image" />
+              <div className="poke-card-name">
+                <h2 className="card-name" onClick={() => setShow(true)}>
+                  {pokemon.name}
+                </h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="poke-card-name">
-          <h2 className="card-name" onClick={() => setShow(true)}>
-            {pokemon.name}
-          </h2>
         </div>
       </div>
       <Modal onClose={() => setShow(false)} show={show} pokemon={pokemon} />
