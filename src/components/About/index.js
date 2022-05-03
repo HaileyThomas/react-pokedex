@@ -21,9 +21,9 @@ const About = (props) => {
           <h2 className="about-modal-titles">About App:</h2>
           <p className="about-modal-text">
             React Pokedex is a React.js web application using PokeAPI to
-            generate the pokemon data of the first generation of Pokemon. Filter
-            pokemon by name or click on the expand icon / pokemon name to open
-            the pokedex and see the pokemons info.
+            generate the pokemon data of the first generation of Pokemon. Click
+            on the expand icon or pokemon name to open the pokedex and see the
+            pokemons info.
           </p>
           <h2 className="about-modal-titles">Contact:</h2>
           <a className="about-link" href="mailto:haileyraethomas@gmail.com">

@@ -519,6 +519,7 @@ ul {
   color: yellow;
 }
 
+
 /* SCROLLBAR STYLES */
 
 /* width */
@@ -534,4 +535,46 @@ ul {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: black;
+}
+
+
+/* MOBILE RESPONSE */
+@media(max-width: 539px) {
+  .main-header {
+    font-size: 30px;
+  }
+
+  svg.header-pokeball {
+    font-size: 25px;
+  }
+
+  .pokelist-container {
+    width: 80%;
+  }
+
+  .footer-container {
+    width: 70%;
+  }
+
+  .about-modal-content {
+    width: 60%;
+  }
+
+  .about-header {
+    font-size: 30px;
+  }
+
+  .about-modal-titles {
+    font-size: 25px;
+  }
+
+  .about-link {
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 378px) {
+  .main-header {
+    font-size: 25px;
+  }
 }
